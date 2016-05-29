@@ -17,12 +17,12 @@
 	function disp(){
 		window.open("window03.php", "window_name", "width=500,height=180,scrollbars=no");
 	}
-	
+
 	function setrange(range){
 		if(range1 == 0 ) {
 //			document.getElementById('range1').value=range;
 			range1 = range;
-			 
+
 			var i;
 			var num = array_job_id.length;
 			for(i=0;i < num;i++){
@@ -126,7 +126,8 @@
 		if( $_SESSION['ListType'] == 2 ) {
 			print " selected";
 		}
-		print ">編集モード(開発中)</option>\n";
+#		print ">編集モード(開発中)</option>\n";
+		print ">編集モード</option>\n";
 
 		print "<option value=\"3\"";
 		if( $_SESSION['ListType'] == 3 ) {
@@ -139,7 +140,7 @@
 			print " selected";
 		}
 #		print ">編集モード(開発中)</option>\n";
-		print ">編集モード</option>\n";
+#		print ">編集モード</option>\n";
 
 	print "</select>\n";
 
