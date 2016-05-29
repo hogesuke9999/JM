@@ -1,0 +1,28 @@
+create table jobdata (
+job_id          serial,
+job_datetime    timestamp ,
+user_id         int ,
+job_description text
+) ;
+
+create table users (
+user_id         serial ,
+user_name       text ,
+user_pass       text
+) ;
+
+create table groups (
+group_id        serial ,
+group_name      text
+) ;
+
+create table group_user (
+group_id        int ,
+user_id         int
+) ;
+
+insert into users ( user_name, user_pass ) values ('user01', 'user01#pass');
+insert into users ( user_name, user_pass ) values ('user02', 'user02#pass');
+insert into users ( user_name, user_pass ) values ('user03', 'user03#pass');
+insert into users ( user_name, user_pass ) values ('user04', 'user04#pass');
+insert into users ( user_name, user_pass ) values ('user05', 'user05#pass');
