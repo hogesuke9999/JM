@@ -141,6 +141,7 @@
 		}
 #		print ">編集モード(開発中)</option>\n";
 #		print ">編集モード</option>\n";
+		print ">サマリー(開発中)</option>\n";
 
 	print "</select>\n";
 
