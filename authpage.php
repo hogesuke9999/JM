@@ -14,7 +14,7 @@
 		print "<tr>\n";
 		print "<td>" . "Password" . "</td>\n";
 		print "<td>";
-		print "<input type=\"text\" name=\"user_pass\" size=\"16\">";
+		print "<input type=\"password\" name=\"user_pass\" size=\"16\">";
 		print "</td>\n";
 		print "</tr>\n";
 		print "</table>\n";
