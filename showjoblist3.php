@@ -175,7 +175,7 @@
 				include "showjoblist_list.php";
 				break;
 			case 2:
-#				print "<h2>編集モード(開発中)</h2>\n";
+#				print "<h2>編集モード</h2>\n";
 				include "showjoblist_edit3.php";
 				break;
 			case 3:
@@ -183,8 +183,8 @@
 				include "showjoblist_summary.php";
 				break;
 			case 4:
-#				print "<h2>編集モード</h2>\n";
-				include "showjoblist_edit2.php";
+#				print ">サマリー(開発中)</option>\n";
+				include "showjoblist_summary2.php";
 				break;
 		}
 	}
