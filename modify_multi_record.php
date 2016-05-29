@@ -4,7 +4,7 @@
 		print "<meta http-equiv=\"Content-Language\" content=\"ja\">\n";
 		print "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
 #		print "<meta http-equiv=\"Refresh\" content=\"300\">\n";
-		print "<meta http-equiv=\"Refresh\" content=\"10;URL=showjoblist3.php\">\n";
+		print "<meta http-equiv=\"Refresh\" content=\"5;URL=showjoblist3.php\">\n";
 	?>
 </head>
 <body>
@@ -74,4 +74,3 @@
 #		phpinfo();
 	?>
 </body>
-	
