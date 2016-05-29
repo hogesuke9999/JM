@@ -190,6 +190,8 @@
 	}
 	print "<hr>";
 	print "<a href=index.php>戻る</a>";
+
+#	phpinfo();
 ?>
 
 </body>
