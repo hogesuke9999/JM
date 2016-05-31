@@ -1,0 +1,33 @@
+memo.txt
+
+jm=> \d project
+    テーブル "public.project"
+       列        |  型  | 修飾語
+-----------------+------+--------
+ project_name    | text |
+ job_description | text |
+
+
+create table project (
+project_id         serial ,
+project_name       text ,
+job_description    text,
+user_id            int
+) ;
+
+
+jm=> \d job_category
+  テーブル "public.job_category"
+        列         |  型  | 修飾語
+-------------------+------+--------
+ job_description   | text |
+ job_category_name | text |
+
+
+create table job_category (
+job_category_id    serial ,
+job_category_name  text ,
+job_description    text,
+user_id            int
+) ;
+

@@ -1,31 +1,18 @@
 <?php
 	# 編集モード表示
 	print "<form method=\"POST\" name=\"modify_multi\" action=\"modify_multi.php\">\n";
+	print "<input type=\"hidden\" name=\"date_year\" value=\"" . $date_year . "\">\n";
+	print "<input type=\"hidden\" name=\"date_mon\"  value=\"" . $date_mon  . "\">\n";
+	print "<input type=\"hidden\" name=\"date_day\"  value=\"" . $date_day  . "\">\n";
 	print "<input type=\"submit\" name=\"BTN\" value=\"一括編集\">\n";
 	print "<input type=\"submit\" name=\"BTN\" value=\"一括削除\">\n";
-#	print "<br>\n";
-
-#	print "<input type=\"text\" id=\"range1\" name=\"range1\" value=\"\">";
-#	print " ～ ";
-#	print "<input type=\"text\" id=\"range2\" name=\"range2\" value=\"\">\n";
-#	print "<br>\n";
-
-#	print "<input type=\"text\" id=\"range_point1\" name=\"range_point1\" value=\"\">";
-#	print " ～ ";
-#	print "<input type=\"text\" id=\"range_point2\" name=\"range_point2\" value=\"\">\n";
-#	print "<br>\n";
-
-#	print "<input type=\"text\" id=\"range\" name=\"range\" value=\"\">";
-#	print "<br>\n";
 
 	print "<table border=1>\n";
 	print "<tr>";
 		print "<th>";
 		print "</th>";
-#		print "<th>job_id</th>";
 		print "<th>開始時間</th>";
 		print "<th>終了時間</th>";
-#		print "<th>user_id</th>";
 		print "<th>内容</th>";
 		print "<th></th>";
 	print "</tr>\n";
@@ -50,14 +37,14 @@
 			# 初回以降の処理
 			print "<tr>";
 			print "<td>";
-			print "<a href=\"#\" onClick=\"setrange(" . $pre_job_id . ")\">→</a>";
-			print "<input type=\"checkbox\" id=\"job" . $pre_job_id . "\" name=\"job_id[" . $pre_job_id . "]\">";
-			print $pre_job_id;
+				print "<a href=\"#" . $pre_job_id . "\" onClick=\"setrange(" . $pre_job_id . ")\">→</a>\n";
+				print "<a name=\"#" . $pre_job_id . "\">\n";
+				print "<input type=\"checkbox\" id=\"job" . $pre_job_id . "\" name=\"job_id[" . $pre_job_id . "]\">\n";
+				print "</a>\n";
+				print $pre_job_id;
 			print "</td>";
-#			print "<td>" . $pre_job_id                    . "</td>";
 			print "<td>" . $pre_job_datetime              . "</td>";
 			print "<td>" . $row[1]                        . "</td>";
-#			print "<td>" . $pre_user_id                   . "</td>";
 			print "<td>" . $pre_job_description           . "</td>";
 			print "<td>";
 				print "<a href=\"modify.php?job_id=" . $pre_job_id . "\" target=\"_blank\">編集</a>";
@@ -85,14 +72,14 @@
 
 	print "<tr>";
 	print "<td>";
-	print "<a href=\"#\" onClick=\"setrange(" . $pre_job_id . ")\">→</a>";
-	print "<input type=\"checkbox\" id=\"job" . $pre_job_id . "\" name=\"job_id[" . $pre_job_id . "]\">";
-	print $pre_job_id;
+		print "<a href=\"#" . $pre_job_id . "\" onClick=\"setrange(" . $pre_job_id . ")\">→</a>\n";
+		print "<a name=\"#" . $pre_job_id . "\">\n";
+		print "<input type=\"checkbox\" id=\"job" . $pre_job_id . "\" name=\"job_id[" . $pre_job_id . "]\">";
+		print "</a>\n";
+		print $pre_job_id;
 	print "</td>";
-#	print "<td>" . $pre_job_id             . "</td>";
 	print "<td>" . $pre_job_datetime       . "</td>";
 	print "<td>" . $pre_job_datetime2      . "</td>";
-#	print "<td>" . $pre_user_id            . "</td>";
 	print "<td>" . $pre_job_description    . "</td>";
 	print "<td>";
 		print "<a href=\"modify.php?job_id=" . $pre_job_id . "\" target=\"_blank\">編集</a>";
